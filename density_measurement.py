@@ -5,11 +5,11 @@
 # Filename: 		density_measurement.py
 # Functions: 		(), void loop(), int data(int, int)
 # Global Variables:	1) videos of type list
-#                   2) density_objs of type list
-#                   3) densities of type list
-#                   4) vis_vert1 of type list
-#                   5) vis_vert2 of type list
-#                   6) vis of type list
+#                       2) density_objs of type list
+#                   	3) densities of type list
+#                   	4) vis_vert1 of type list
+#                   	5) vis_vert2 of type list
+#                   	6) vis of type list
 #
 #
 
@@ -25,12 +25,12 @@ class DensityMeasurement(threading.Thread):
 	#
 	#
 	# Function Name: 	__init__()
-	# Input: 			1) vo --> to capture the video
-	#					2) ft --> the flow theshold to compare with the obtained density
-	#					3) name --> name of the video
-	# Output: 			None
-	# Logic:			This function is used to initialize the variables inside the class DensityMeasurement()
-	#					(ie. it is a constructor of the class DensityMeasurement())
+	# Input: 		1) vo --> to capture the video
+	#			2) ft --> the flow theshold to compare with the obtained density
+	#			3) name --> name of the video
+	# Output: 		None
+	# Logic:		This function is used to initialize the variables inside the class DensityMeasurement()
+	#			(ie. it is a constructor of the class DensityMeasurement())
 	# Example Call:		DensityMeasurement.__init__(cv.VideoCapture(video), 1.0, video)
 	#
 	#
@@ -45,11 +45,11 @@ class DensityMeasurement(threading.Thread):
 	#
 	#
 	# Function Name: 	draw_flow()
-	# Input: 			1) img --> the BGR to gray converted image
-	# 					2) flow --> the list
-	# Output: 			vis
-	# Logic:			This function draws the flow and displays it on the monitor along with the captured image.
-	#					The flow of pixels and its angle of flow are drawn using this function.
+	# Input: 		1) img --> the BGR to gray converted image
+	# 			2) flow --> the list
+	# Output: 		vis
+	# Logic:		This function draws the flow and displays it on the monitor along with the captured image.
+	#			The flow of pixels and its angle of flow are drawn using this function.
 	# Example Call:		self.flow_image = self.draw_flow(gray, flow) from run function
 	#
 	#
@@ -68,10 +68,10 @@ class DensityMeasurement(threading.Thread):
 	#
 	#
 	# Function Name: 	run()
-	# Input: 			self --> passing the class itself as a parameter
-	# Output: 			None
-	# Logic:			This function uses Farneback Optical Flow to find the density of each road meeting
-	#					at the junction
+	# Input: 		self --> passing the class itself as a parameter
+	# Output: 		None
+	# Logic:		This function uses Farneback Optical Flow to find the density of each road meeting
+	#			at the junction
 	# Example Call:		DensityMeasurement.start()
 	#
 	#
@@ -95,10 +95,10 @@ class Controller(threading.Thread):
 	#
 	#
 	# Function Name: 	__init__()
-	# Input: 			densities of type list
-	# Output: 			None
-	# Logic:			This function is used to initialize the variables inside the class Controller()
-	#					(ie. it is a constructor of the class Controller())
+	# Input: 		densities of type list
+	# Output: 		None
+	# Logic:		This function is used to initialize the variables inside the class Controller()
+	#			(ie. it is a constructor of the class Controller())
 	# Example Call:		Controller.__init__(densities)
 	#
 	#
@@ -114,10 +114,10 @@ class Controller(threading.Thread):
 	#
 	#
 	# Function Name: 	run()
-	# Input: 			self --> passing the class itself as a parameter
-	# Output: 			None
-	# Logic:			This function compares all the densities obtained using optical flow and sends
-	#					serial data to the Arduino based on the comparision
+	# Input: 		self --> passing the class itself as a parameter
+	# Output: 		None
+	# Logic:		This function compares all the densities obtained using optical flow and sends
+	#			serial data to the Arduino based on the comparision
 	# Example Call:		Controller.start()
 	#
 	#
