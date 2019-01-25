@@ -1,6 +1,8 @@
 # Traffic-Law-Enforcement-System
 
-This project was done as part of the e-Yantra Ideas Competition 2017 (eYIC-2017) conducted by e-Yantra, IIT Bombay. The main aim of this project is to control the traffic signals at a junction based on the motion of vehicles on each road. We have used Farneback Optical Flow to check the motion on each road and have used threading to send spontaneous response to the traffic signals. We have also made a solution to find the speed of a vehicle using ultrasonic sensors.
-Requirements: OS: Any Linux based OS, Python version 3.6, openCV version 2.4.9, numpy module, Arduino IDE, Arduino UNO R3, A traffic lights model using LEDs, Four test case videos representing each lane, Ultrasonic Sensors
+In this project, we developed an automatic traffic light control system based on motion on the various lanes meeting at a junction. We applied multithreading of Gunnar-Farneback optical flow on the camera surveillance of four lanes meeting at a junction and compared their outputs to control the traffic lights. 
+The project was presented in a simplified abstraction of a road junction with toy cars used to represent vehicles and led bulbs used to represent the traffic lights. All the logic were coded in Python except for the light controls which were programmed into an Arduino board. <br/>
 
-### Contact me for any help/doubts regarding this project. ###
+This repo contains all the code related to this project.
+
+### Feel free to contact me for any help/doubts regarding this project!! ###
