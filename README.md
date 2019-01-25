@@ -5,4 +5,4 @@ The project was presented in a simplified abstraction of a road junction with to
 
 This repo contains all the code related to this project.
 
-# Feel free to contact me for any help/doubts regarding this project!! #
+### Feel free to contact me for any help/doubts regarding this project!! ###
