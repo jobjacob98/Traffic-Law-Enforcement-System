@@ -4,5 +4,3 @@ In this project, we developed an automatic traffic light control system based on
 The project was presented in a simplified abstraction of a road junction with toy cars used to represent vehicles and led bulbs used to represent the traffic lights. All the logic were coded in Python except for the light controls which were programmed into an Arduino board. <br/>
 
 This repo contains all the code related to this project.
-
-### Feel free to contact me for any help/doubts regarding this project!! ###
